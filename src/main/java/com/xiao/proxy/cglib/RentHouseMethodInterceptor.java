@@ -15,6 +15,7 @@ public class RentHouseMethodInterceptor implements MethodInterceptor {
      * @return
      * @throws Throwable
      */
+    @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("cglib动态代理**验证身份.....");
         Object o1 = methodProxy.invokeSuper(o, objects);
